@@ -1,28 +1,8 @@
-/*
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
-*/
+import Link from "next/link";
+
 export default function Example() {
   return (
     <div className="min-h-screen h-full bg-gray-900 flex items-center">
-      {/*
-        This example requires updating your template:
-
-        ```
-        <html class="h-full bg-gray-900">
-        <body class="h-full">
-        ```
-      */}
       <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
           <img
@@ -86,10 +66,7 @@ export default function Example() {
             </div>
 
             <div>
-              <button
-                type="submit"
-                className="flex w-full justify-center rounded-md bg-roman-coffee-500 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-roman-coffee-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-roman-coffee-500"
-              >
+              <button type="submit" className="button">
                 Se connecter
               </button>
             </div>
@@ -97,12 +74,12 @@ export default function Example() {
 
           <p className="mt-10 text-center text-sm text-gray-400">
             Pas encore inscrit ?{" "}
-            <a
-              href="#"
+            <Link
+              href="/signup"
               className="font-semibold leading-6 text-roman-coffee-400 hover:text-roman-coffee-300 hover:underline"
             >
               Créer un compte
-            </a>
+            </Link>
           </p>
         </div>
       </div>
