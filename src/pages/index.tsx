@@ -10,7 +10,7 @@ export default function Home() {
       <h1>Pages :</h1>
       <ul className="list-disc ml-6">
         <li className="underline">
-          <Link href="/lo/lin">/login</Link>
+          <Link href="/login">/login</Link>
         </li>
         <li className="underline">
           <Link href="/signup">/signup</Link>
